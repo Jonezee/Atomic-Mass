@@ -1,0 +1,541 @@
+H=1.01
+He=4.00
+Li=6.94
+Be=9.01
+B=10.8
+C=12.0
+N=14.0
+O=16.0
+F=19.0
+Ne=20.2
+Na=23.0
+Mg=24.3
+Al=27.0
+Si=28.1
+P=31.0
+S=32.1
+Cl=35.5
+Ar=39.9
+K=39.1
+Ca=40.1
+Sc=45.0
+Ti=47.9
+V=50.9
+Cr=52.0
+Mn=54.9
+Fe=55.8
+Co=58.9
+Ni=58.7
+Cu=63.5
+Zn=65.4
+Ga=69.7
+Ge=72.64
+As=74.9
+Se=79.0
+Br=79.9
+Kr=83.8
+Rb=85.5
+Sr=87.6
+Y=88.9
+Zr=91.2
+Nb=92.9
+Mo=95.9
+Tc=98
+Ru=101
+Rh=103
+Pd=106
+Ag=108
+Cd=112
+In=115
+Sn=119
+Sb=122
+Te=128
+I=127
+Xe=131
+Cs=133
+Ba=137
+La=139
+Ce=140
+Pr=141
+Nd=144
+Pm=145
+Sm=150
+Eu=152
+Gd=157
+Tb=159
+Dy=163
+Ho=165
+Er=167
+Tm=169
+Yb=173
+Lu=175
+Hf=178
+Ta=181
+W=184
+Re=186
+Os=190
+Ir=192
+Pt=195
+Au=197
+Hg=201
+Tl=204
+Pb=207
+Bi=209
+Po=210
+At=210
+Rn=220
+Fr=223
+Ra=226
+Ac=227
+Pa=231
+Th=232
+Np=237
+U=238
+Am=243
+Pu=244
+Cm=247
+Bk=247
+Cf=251
+Es=252
+Fm=257
+Md=258
+No=259
+Lr=262
+Rf=261
+Db=262
+Sg=266
+Bh=264
+Hs=277
+Mt=268
+Ds=271
+Rg=272
+
+from tkinter import *
+root = Tk()
+root.title("Atomic Mass Calc")
+ButFrame = Frame(root)
+ButFrame2 = Frame(root)
+ButFrame3 = Frame(root)
+ButFrame4 = Frame(root)
+Eq = Frame(root)
+Numbers = Frame(root)
+listbox = Entry(root)
+listbox2 = Entry(root)
+listbox3 = Entry(root)
+listbox4 = Entry(root)
+answerbox = Entry(root)
+
+
+
+###Commands
+def My_Function2(Element1,Sub1,Element2,Sub2):
+    return((Element1*Sub1)+(Element2*Sub2))
+def My_Function():
+    Element1 = listbox.get()
+    Sub1 = listbox2.get()
+    Element2 = listbox3.get()
+    Sub2 = listbox4.get()
+    Element1=float(Element1)
+    Element2=float(Element1)
+    Sub1=float(Sub1)
+    Sub2=float(Sub2)
+    answer2 = My_Function2(Element1,Sub1,Element2,Sub2)
+    answerbox.insert(END, answer2)
+ 
+    
+    
+    
+    
+def Button1():  listbox.insert(END, "1.01")
+def Button2():   listbox.insert(END, "4.00")
+def Button3(): 	listbox.insert(END, "6.94")
+def Button4(): 	listbox.insert(END, "9.01")
+def Button5(): 	listbox.insert(END, "10.8")
+def Button6(): 	listbox.insert(END, "12.0")
+def Button7(): 	listbox.insert(END, "14.0")
+def Button8(): 	listbox.insert(END, "16.0")
+def Button9(): 	listbox.insert(END, "19.0")
+def Button10(): 	listbox.insert(END, "20.2")
+def Button11(): 	listbox.insert(END, "23.0")
+def Button12(): 	listbox.insert(END, "24.3")
+def Button13(): 	listbox.insert(END, "27.0")
+def Button14(): 	listbox.insert(END, "28.1")
+def Button15(): 	listbox.insert(END, "31.0")
+def Button16(): 	listbox.insert(END, "32.1")
+def Button17(): 	listbox.insert(END, "35.5")
+def Button18(): 	listbox.insert(END, "39.9")
+def Button19(): 	listbox.insert(END, "39.1")
+def Button20(): 	listbox.insert(END, "40.1")
+def Button21(): 	listbox.insert(END, "45.0")
+def Button22(): 	listbox.insert(END, "47.9")
+def Button23(): 	listbox.insert(END, "50.9")
+def Button24(): 	listbox.insert(END, "52.0")
+def Button25(): 	listbox.insert(END, "54.9")
+def Button26(): 	listbox.insert(END, "55.8")
+def Button27(): 	listbox.insert(END, "58.9")
+def Button28(): 	listbox.insert(END, "58.7")
+def Button29(): 	listbox.insert(END, "63.5")
+def Button30(): 	listbox.insert(END, "63.4")
+def Button31(): 	listbox.insert(END, "69.7")
+def Button32(): 	listbox.insert(END, "72.6")
+def Button33(): 	listbox.insert(END, "74.9")
+def Button34(): 	listbox.insert(END, "79.0")
+def Button35(): 	listbox.insert(END, "79.9")
+def Button36(): 	listbox.insert(END, "83.8")
+def Button37(): 	listbox.insert(END, "85.5")
+def Button38(): 	listbox.insert(END, "87.6")
+def Button39(): 	listbox.insert(END, "88.9")
+def Button40(): 	listbox.insert(END, "91.2")
+def Button41(): 	listbox.insert(END, "92.9")
+def Button42(): 	listbox.insert(END, "95.9")
+def Button43(): 	listbox.insert(END, "98.0")
+def Button44(): 	listbox.insert(END, "101")
+def Button45(): 	listbox.insert(END, "103")
+def Button46(): 	listbox.insert(END, "106")
+def Button47(): 	listbox.insert(END, "108")
+def Button48(): 	listbox.insert(END, "112")
+def Button49(): 	listbox.insert(END, "115")
+def Button50(): 	listbox.insert(END, "119")
+def Button51(): 	listbox.insert(END, "122")
+def Button52(): 	listbox.insert(END, "128")
+def Button53(): 	listbox.insert(END, "127")
+def Button54(): 	listbox.insert(END, "131")
+def Button55(): 	listbox.insert(END, "133")
+def Button56(): 	listbox.insert(END, "137")
+def Button57(): 	listbox.insert(END, "139")
+def Button58(): 	listbox.insert(END, "140")
+def Button59(): 	listbox.insert(END, "141")
+def Button60(): 	listbox.insert(END, "144")
+def Button61(): 	listbox.insert(END, "145")
+def Button62(): 	listbox.insert(END, "150")
+def Button63(): 	listbox.insert(END, "152")
+def Button64(): 	listbox.insert(END, "157")
+def Button65(): 	listbox.insert(END, "159")
+def Button66(): 	listbox.insert(END, "163")
+def Button67(): 	listbox.insert(END, "165")
+def Button68(): 	listbox.insert(END, "167")
+def Button69(): 	listbox.insert(END, "169")
+def Button70(): 	listbox.insert(END, "173")
+def Button71(): 	listbox.insert(END, "175")
+def Button72(): 	listbox.insert(END, "178")
+def Button73(): 	listbox.insert(END, "181")
+def Button74(): 	listbox.insert(END, "184")
+def Button75(): 	listbox.insert(END, "186")
+def Button76(): 	listbox.insert(END, "190")
+def Button77(): 	listbox.insert(END, "192")
+def Button78(): 	listbox.insert(END, "195")
+def Button79(): 	listbox.insert(END, "197")
+def Button80(): 	listbox.insert(END, "201")
+def Button81(): 	listbox.insert(END, "204")
+def Button82(): 	listbox.insert(END, "207")
+def Button83(): 	listbox.insert(END, "209")
+def Button84(): 	listbox.insert(END, "210")
+def Button85(): 	listbox.insert(END, "210")
+def Button86(): 	listbox.insert(END, "220")
+def Button87(): 	listbox.insert(END, "223")
+def Button88(): 	listbox.insert(END, "226")
+def Button89(): 	listbox.insert(END, "227")
+def Button90(): 	listbox.insert(END, "231")
+def Button91(): 	listbox.insert(END, "232")
+def Button92(): 	listbox.insert(END, "237")
+def Button93(): 	listbox.insert(END, "238")
+def Button94(): 	listbox.insert(END, "243")
+def Button95(): 	listbox.insert(END, "244")
+def Button96(): 	listbox.insert(END, "247")
+def Button97(): 	listbox.insert(END, "247")
+def Button98(): 	listbox.insert(END, "251")
+def Button99(): 	listbox.insert(END, "252")
+def Button100(): 	listbox.insert(END, "257")
+def Button101(): 	listbox.insert(END, "258")
+def Button102(): 	listbox.insert(END, "259")
+def Button103(): 	listbox.insert(END, "262")
+def Button104(): 	listbox.insert(END, "261")
+def Button105(): 	listbox.insert(END, "262")
+def Button106(): 	listbox.insert(END, "266")
+def Button107(): 	listbox.insert(END, "264")
+def Button108(): 	listbox.insert(END, "277")
+def Button109(): 	listbox.insert(END, "268")
+def Button110(): 	listbox.insert(END, "271")
+def Button111(): 	listbox.insert(END, "272")
+def Button112():        listbox.insert(END, "+")
+def Button113():        listbox.insert(END, "-")
+def Button114():        listbox.insert(END, "*")
+def Button115():        listbox.insert(END, "/")
+def Button116():        listbox.insert(END, "1")
+def Button117():        listbox.insert(END, "2")
+def Button118():        listbox.insert(END, "3")
+def Button119():        listbox.insert(END, "4")
+def Button120():        listbox.insert(END, "5")
+def Button121():        listbox.insert(END, "6")
+def Button122():        listbox.insert(END, "7")
+def Button123():        listbox.insert(END, "8")
+def Button124():        listbox.insert(END, "9")
+
+###Buttons
+button1 = Button(ButFrame,text="H" , command=Button1)
+button2 = Button(ButFrame, text="He", command=Button2)
+button3 = Button(ButFrame, text="Li", command=Button3)
+button4 = Button(ButFrame, text="Be", command=Button4)
+button5 = Button(ButFrame, text="B", command=Button5)
+button6 = Button(ButFrame, text="C", command=Button6)
+button7 = Button(ButFrame, text="N", command=Button7)
+button8 = Button(ButFrame, text="O", command=Button8)
+button9 = Button(ButFrame, text="F", command=Button9)
+button10 = Button(ButFrame, text="Ne", command=Button10)
+button11 = Button(ButFrame, text="Na", command=Button11)
+button12 = Button(ButFrame, text="Mg", command=Button12)
+button13 = Button(ButFrame, text="Al", command=Button13)
+button14 = Button(ButFrame, text="Si", command=Button14)
+button15 = Button(ButFrame, text="P", command=Button15)
+button16 = Button(ButFrame, text="S", command=Button16)
+button17 = Button(ButFrame, text="Cl", command=Button17)
+button18 = Button(ButFrame, text="Ar", command=Button18)
+button19 = Button(ButFrame, text="K", command=Button19)
+button20 = Button(ButFrame, text="Ca", command=Button20)
+button21 = Button(ButFrame, text="Sc", command=Button21)
+button22 = Button(ButFrame, text="Ti", command=Button22)
+button23 = Button(ButFrame, text="V", command=Button23)
+button24 = Button(ButFrame, text="Cr", command=Button24)
+button25 = Button(ButFrame, text="Mn", command=Button25)
+button26 = Button(ButFrame, text="Fe", command=Button26)
+button27 = Button(ButFrame, text="Co", command=Button27)
+button28 = Button(ButFrame, text="Ni", command=Button28)
+button29 = Button(ButFrame3, text="Cu", command=Button29)
+button30 = Button(ButFrame3, text="Zn", command=Button30)
+button31 = Button(ButFrame3, text="Ga", command=Button31)
+button32 = Button(ButFrame3, text="Ge", command=Button32)
+button33 = Button(ButFrame3, text="As", command=Button33)
+button34 = Button(ButFrame3, text="Se", command=Button34)
+button35 = Button(ButFrame3, text="Br", command=Button35)
+button36 = Button(ButFrame3, text="Kr", command=Button36)
+button37 = Button(ButFrame3, text="Rb", command=Button37)
+button38 = Button(ButFrame3, text="Sr", command=Button38)
+button39 = Button(ButFrame3, text="Y", command=Button39)
+button40 = Button(ButFrame3, text="Zr", command=Button40)
+button41 = Button(ButFrame3, text="Nb", command=Button41)
+button42 = Button(ButFrame3, text="Mo", command=Button42)
+button43 = Button(ButFrame3, text="Tc", command=Button43)
+button44 = Button(ButFrame3, text="Ru", command=Button44)
+button45 = Button(ButFrame3, text="Rh", command=Button45)
+button46 = Button(ButFrame3, text="Pd", command=Button46)
+button47 = Button(ButFrame3, text="Ag", command=Button47)
+button48 = Button(ButFrame3, text="Cd", command=Button48)
+button49 = Button(ButFrame3, text="In", command=Button49)
+button50 = Button(ButFrame3, text="Sn", command=Button50)
+button51 = Button(ButFrame3, text="Sb", command=Button51)
+button52 = Button(ButFrame3, text="Te", command=Button52)
+button53 = Button(ButFrame3, text="I", command=Button53)
+button54 = Button(ButFrame3, text="Xe", command=Button54)
+button55 = Button(ButFrame3, text="Cs", command=Button55)
+button56 = Button(ButFrame3, text="Ba", command=Button56)
+button57 = Button(ButFrame2, text="La", command=Button57)
+button58 = Button(ButFrame2, text="Ce", command=Button58)
+button59 = Button(ButFrame2, text="Pr", command=Button59)
+button60 = Button(ButFrame2, text="Nd", command=Button60)
+button61 = Button(ButFrame2, text="Pm", command=Button61)
+button62 = Button(ButFrame2, text="Sm", command=Button62)
+button63 = Button(ButFrame2, text="Eu", command=Button63)
+button64 = Button(ButFrame2, text="Gd", command=Button64)
+button65 = Button(ButFrame2, text="Tb", command=Button65)
+button66 = Button(ButFrame2, text="Dy", command=Button66)
+button67 = Button(ButFrame2, text="Ho", command=Button67)
+button68 = Button(ButFrame2, text="Er", command=Button68)
+button69 = Button(ButFrame2, text="Tm", command=Button69)
+button70 = Button(ButFrame2, text="Yb", command=Button70)
+button71 = Button(ButFrame2, text="Lu", command=Button71)
+buttom72 = Button(ButFrame2, text="Hf", command=Button72)
+button73 = Button(ButFrame2, text="Ta", command=Button73)
+button74 = Button(ButFrame2, text="W", command=Button74)
+button75 = Button(ButFrame2, text="Re", command=Button75)
+button76 = Button(ButFrame2, text="os", command=Button76)
+button77 = Button(ButFrame2, text="Ir", command=Button77)
+button78 = Button(ButFrame2, text="Pt", command=Button78)
+button79 = Button(ButFrame2, text="Au", command=Button79)
+button80 = Button(ButFrame2, text="Hg", command=Button80)
+button81 = Button(ButFrame2, text="Tl", command=Button81)
+button82 = Button(ButFrame2, text="Pb", command=Button82)
+button83 = Button(ButFrame2, text="Bi", command=Button83)
+button84 = Button(ButFrame4, text="Po", command=Button84)
+button85 = Button(ButFrame4, text="At", command=Button85)
+button86 = Button(ButFrame4, text="Rn", command=Button86)
+button87 = Button(ButFrame4, text="Fr", command=Button87)
+button88 = Button(ButFrame4, text="Ra", command=Button88)
+button89 = Button(ButFrame4, text="Ac", command=Button89)
+button90 = Button(ButFrame4, text="Pa", command=Button90)
+button91 = Button(ButFrame4, text="Th", command=Button91)
+button92 = Button(ButFrame4, text="Np", command=Button92)
+button93 = Button(ButFrame4, text="U", command=Button93)
+button94 = Button(ButFrame4, text="Am", command=Button94)
+button95 = Button(ButFrame4, text="Pu", command=Button95)
+button96 = Button(ButFrame4, text="Cm", command=Button96)
+button97 = Button(ButFrame4, text="Bk", command=Button97)
+button98 = Button(ButFrame4, text="Cf", command=Button98)
+button99 = Button(ButFrame4, text="Es", command=Button99)
+button100 = Button(ButFrame4, text="Fm", command=Button100)
+button101 = Button(ButFrame4, text="Md", command=Button101)
+button102 = Button(ButFrame4, text="No", command=Button102)
+button103 = Button(ButFrame4, text="Lr", command=Button103)
+button104 = Button(ButFrame4, text="Rf", command=Button104)
+button105 = Button(ButFrame4, text="Db", command=Button105)
+button106 = Button(ButFrame4, text="Sg", command=Button106)
+button107 = Button(ButFrame4, text="Bh", command=Button107)
+button108 = Button(ButFrame4, text="Hs", command=Button108)
+button109 = Button(ButFrame4, text="Mt", command=Button109)
+button110 = Button(ButFrame4, text="Ds", command=Button110)
+button111 = Button(ButFrame4, text="Rg", command=Button111)
+button112 = Button(Eq, text="+", command=Button112)
+button113 = Button(Eq, text="-", command=Button113)
+button114 = Button(Eq, text="*", command=Button114)
+button115 = Button(Eq, text="/", command=Button115)
+button116 = Button(Numbers, text="1", command=Button116)
+button117 = Button(Numbers, text="2", command=Button117)
+button118 = Button(Numbers, text="3", command=Button118)
+button119 = Button(Numbers, text="4", command=Button119)
+button120 = Button(Numbers, text="5", command=Button120)
+button121 = Button(Numbers, text="6", command=Button121)
+button122 = Button(Numbers, text="7", command=Button122)
+button123 = Button(Numbers, text="8", command=Button123)
+button124 = Button(Numbers, text="9", command=Button124)
+button125 = Button(Numbers, text="Solve", command=My_Function)
+###Packing
+button1.pack(side=LEFT)
+button2.pack(side=LEFT)
+button3.pack(side=LEFT)
+button4.pack(side=LEFT)
+button5.pack(side=LEFT)
+button6.pack(side=LEFT)
+button7.pack(side=LEFT)
+button8.pack(side=LEFT)
+button9.pack(side=LEFT)
+button10.pack(side=LEFT)
+button11.pack(side=LEFT)
+button12.pack(side=LEFT)
+button13.pack(side=LEFT)
+button14.pack(side=LEFT)
+button15.pack(side=LEFT)
+button16.pack(side=LEFT)
+button17.pack(side=LEFT)
+button18.pack(side=LEFT)
+button19.pack(side=LEFT)
+button20.pack(side=LEFT)
+button21.pack(side=LEFT)
+button22.pack(side=LEFT)
+button23.pack(side=LEFT)
+button24.pack(side=LEFT)
+button25.pack(side=LEFT)
+button26.pack(side=LEFT)
+button27.pack(side=LEFT)
+button28.pack(side=LEFT)
+button29.pack(side=LEFT)
+button30.pack(side=LEFT)
+button31.pack(side=LEFT)
+button32.pack(side=LEFT)
+button33.pack(side=LEFT)
+button34.pack(side=LEFT)
+button35.pack(side=LEFT)
+button36.pack(side=LEFT)
+button37.pack(side=LEFT)
+button38.pack(side=LEFT)
+button39.pack(side=LEFT)
+button40.pack(side=LEFT)
+button41.pack(side=LEFT)
+button42.pack(side=LEFT)
+button43.pack(side=LEFT)
+button44.pack(side=LEFT)
+button45.pack(side=LEFT)
+button46.pack(side=LEFT)
+button47.pack(side=LEFT)
+button48.pack(side=LEFT)
+button49.pack(side=LEFT)
+button50.pack(side=LEFT)
+button51.pack(side=LEFT)
+button52.pack(side=LEFT)
+button53.pack(side=LEFT)
+button54.pack(side=LEFT)
+button55.pack(side=LEFT)
+button56.pack(side=LEFT)
+button57.pack(side=LEFT)
+button58.pack(side=LEFT)
+button59.pack(side=LEFT)
+button60.pack(side=LEFT)
+button61.pack(side=LEFT)
+button62.pack(side=LEFT)
+button63.pack(side=LEFT)
+button64.pack(side=LEFT)
+button65.pack(side=LEFT)
+button66.pack(side=LEFT)
+button67.pack(side=LEFT)
+button68.pack(side=LEFT)
+button69.pack(side=LEFT)
+button70.pack(side=LEFT)
+button71.pack(side=LEFT)
+buttom72.pack(side=LEFT)
+button73.pack(side=LEFT)
+button74.pack(side=LEFT)
+button75.pack(side=LEFT)
+button76.pack(side=LEFT)
+button77.pack(side=LEFT)
+button78.pack(side=LEFT)
+button79.pack(side=LEFT)
+button80.pack(side=LEFT)
+button81.pack(side=LEFT)
+button82.pack(side=LEFT)
+button83.pack(side=LEFT)
+button84.pack(side=LEFT)
+button85.pack(side=LEFT)
+button86.pack(side=LEFT)
+button87.pack(side=LEFT)
+button88.pack(side=LEFT)
+button89.pack(side=LEFT)
+button90.pack(side=LEFT)
+button91.pack(side=LEFT)
+button92.pack(side=LEFT)
+button93.pack(side=LEFT)
+button94.pack(side=LEFT)
+button95.pack(side=LEFT)
+button96.pack(side=LEFT)
+button97.pack(side=LEFT)
+button98.pack(side=LEFT)
+button99.pack(side=LEFT)
+button100.pack(side=LEFT)
+button101.pack(side=LEFT)
+button102.pack(side=LEFT)
+button103.pack(side=LEFT)
+button104.pack(side=LEFT)
+button105.pack(side=LEFT)
+button106.pack(side=LEFT)
+button107.pack(side=LEFT)
+button108.pack(side=LEFT)
+button109.pack(side=LEFT)
+button110.pack(side=LEFT)
+button111.pack(side=LEFT)
+button112.pack(side=LEFT)
+button113.pack(side=LEFT)
+button114.pack(side=LEFT)
+button115.pack(side=LEFT)
+button116.pack(side=LEFT)
+button117.pack(side=LEFT)
+button118.pack(side=LEFT)
+button119.pack(side=LEFT)
+button120.pack(side=LEFT)
+button121.pack(side=LEFT)
+button122.pack(side=LEFT)
+button123.pack(side=LEFT)
+button124.pack(side=LEFT)
+button125.pack(side=LEFT)
+answerbox.pack()
+listbox.pack()
+listbox2.pack()
+listbox3.pack()
+listbox4.pack()
+###Frame Packing
+ButFrame.pack(fill=BOTH)
+ButFrame2.pack(fill=BOTH)
+ButFrame3.pack(fill=BOTH)
+ButFrame4.pack(fill=BOTH)
+Eq.pack(fill=BOTH)
+Numbers.pack(fill=BOTH)
+root.geometry("1000x600")
+###Values
+
+root.mainloop()
